@@ -1,91 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>this is digital.</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this is digital.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+  <nav class="navbar">
+    <a href="#" class="logo">this is digital<span>.</span></a>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
 
-  <body>
+      <a href="#" class="contact-btn">
+        Contact us
+        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+    </div>
+  </nav>
 
-    <nav class="navbar">
-      <a href="#" class="logo">this is digital<span>.</span></a>
+  <section class="hero">
 
-      <div class="nav-right">
-        <ul class="nav-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Culture</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
+    <div class="img-left">
+      <img src="https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Interior design studio" class="hero-img">
+    </div>
 
-        <a href="#" class="contact-btn">
-          Contact us
-          <span class="arrow-circle">
-            <!-- inline SVG arrow icon -->
-            <svg class="arrow-icon" viewBox="0 0 24 24">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </nav>
+    <div class="img-top-right">
+      <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creative workspace" class="hero-img">
+    </div>
 
-    <section class="hero">
+    <div class="img-bottom-right">
+      <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern office space" class="hero-img">
+    </div>
 
-      <div class="img-left">
-        <img
-          src="https://images.pexels.com/photos/1005058/pexels-photo-1005058.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Studio shelves with plants"
-          class="hero-img"
-        />
-      </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Digital Performance<br>
+        <span class="underlined">Solutions</span>
+      </h1>
 
-      <div class="img-top-right">
-        <img
-          src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Creative workspace interior"
-          class="hero-img"
-        />
-      </div>
+      <a href="#" class="find-out-more">
+        Find out more
+        <span class="arrow-circle">
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
 
-      <div class="img-bottom-right">
-        <img
-          src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="Modern office with hanging plants"
-          class="hero-img"
-        />
-      </div>
+  </section>
 
-      <div class="hero-content">
-        <h1 class="hero-title">
-          Digital Performance<br />
-          <span class="underlined">Solutions</span>
-        </h1>
-
-        <a href="#" class="find-out-more">
-          Find out more
-          <span class="arrow-circle">
-            <svg class="arrow-icon" viewBox="0 0 24 24">
-              <line x1="5" y1="12" x2="19" y2="12" />
-              <polyline points="12 5 19 12 12 19" />
-            </svg>
-          </span>
-        </a>
-      </div>
-
-    </section>
-
-  </body>
+</body>
 </html>
