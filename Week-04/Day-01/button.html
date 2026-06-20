@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animated Button</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.15);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+</style>
+</head>
+<body>
+  <button class="btn">Click Me</button>
+</body>
+</html>
