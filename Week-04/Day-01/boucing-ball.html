@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,4 +36,43 @@ body {
 <body>
   <div class="ball"></div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bouncing Ball</title>
+<style>
+body {
+  margin: 0;
+  background-color: #1e1e2e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 80px;
+}
+
+.ball {
+  width: 60px;
+  height: 60px;
+  background-color: #ff4757;
+  border-radius: 50%;
+  animation: bounce 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-400px);
+  }
+}
+</style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+>>>>>>> 59f92ce0a94b3607de6f448d134b7b4bc8a5fd01
 </html>
