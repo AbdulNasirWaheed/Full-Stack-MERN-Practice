@@ -185,3 +185,16 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .img-left,
+  .img-top-right,
+  .img-bottom-right {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+}
