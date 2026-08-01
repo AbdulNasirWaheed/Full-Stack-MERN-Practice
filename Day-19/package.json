@@ -1,0 +1,13 @@
+{
+  "name": "day-19-express-rest",
+  "version": "1.0.0",
+  "description": "Learning Express REST API with CRUD routes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
