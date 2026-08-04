@@ -38,6 +38,38 @@ app.post("/create-student",async (req,res)=>{
     return res.status(500).json({success:false, message:"internal server error"})
   }
 })
+app.get("/get-students",async (req,res)=>{
+  try{
+    const students = await Model.find()
+    return res.status(200).json({success:true, message:"students fetched successfully", students})
+  }
+  catch(err){
+    console.log(err)
+    return res.status(500).json({success:false, message:"internal server error"})
+  }
+})
+app.delete("/delete-student/:id",async (req,res)=>{
+  try{
+    const {id} = req.params
+    const students = await Model.findByIdAndDelete(id)  
+    return res.status(200).json({success:true, message:"student deleted successfully", students})
+  }
+  catch(err){
+    console.log(err)
+    return res.status(500).json({success:false, message:"internal server error"})
+  }
+})
+app.put("/update-student/:id",async (req,res)=>{
+  try{
+    const {id} = req.params
+    const students = await Model.findByIdAndUpdate(id, req.body, {new:true})  
+    return res.status(200).json({success:true, message:"student updated successfully", students})
+  }
+  catch(err){
+    console.log(err)
+    return res.status(500).json({success:false, message:"internal server error"})
+  }
+})
 app.get("/test",async(req,res)=>{
   res.send("hello")
 }
@@ -45,3 +77,6 @@ app.get("/test",async(req,res)=>{
 app.listen(30,()=>{
   console.log("server started")
 })
+
+
+
